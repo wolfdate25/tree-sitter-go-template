@@ -57,6 +57,8 @@ module.exports = grammar({
 
     text: $ => 
         choice(
+            /"[^{\n]+"/,
+            /'[^{\n]+'/,
             token(
                 repeat1(
                     choice(
